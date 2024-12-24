@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>/* styles.css */
+        body {
+            
+            margin: 0;
+            padding: 0;
+       box-sizing: border-box;
+      
+      
+        }
+    
+        .header{
+            width:100%;
+            margin: auto;
+         
+            margin: 0;
+            padding: 0;
+            top:0px;
+          display:inline-block;  
+            
+            
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+      
+        }
+        
+        fieldset {
+            border: 1px solid #000;
+
+  
+        
+        }
+       
+        
+        legend {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 0 5px;
+        }
+        
+        label {
+            display: inline-block;
+          
+            margin-bottom: 10px;
+          
+
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+          
+         padding:5px;
+       margin-right:200px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        
+
+        button {
+            margin-top: 10px;
+            padding: 4px 16px;
+font-size: 18px;
+            color:black;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: red;
+        }
+
+        .divf{
+            width:35%;
+            margin:auto;
+        }
+
+        </style>
+</head>
+<body>
+<div class="header">
+    <h2>Basic Form design Using Html</h2>
+</div>
+
+    <div class="divf">
+        
+
+        <fieldset >
+            <legend>Personal Details</legend>
+            <form  >
+                <label >First name:</label>
+                <input type="text" ><br><br>
+
+                <label >Last name:</label>
+                <input type="text"><br><br>
+
+                <label>Gender:</label>
+                <input type="radio"  value="male">
+                <label>Male</label>
+                <input type="radio"  value="female">
+                <label >Female</label><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" ><br><br>
+
+                <label >Date of Birth:</label>
+                <input type="date" ><br><br>
+
+                <label >Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
